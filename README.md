@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/querocriarsite/clone-discord?style=plastic)</a>
+
+#PROJETO CLONE DO DISCORD
 
 ## Available Scripts
 
