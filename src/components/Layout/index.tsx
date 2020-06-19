@@ -10,6 +10,7 @@ const Layout: React.FC = () => {
             <ServerList/>
             <ServerName/>
             <ChannelInfo/>
+            <ChannelList/>
         </Grid>
     );
 };
