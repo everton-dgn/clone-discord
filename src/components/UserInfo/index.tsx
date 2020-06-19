@@ -9,13 +9,17 @@ import {
     HeadphoneIcon,
     SettingsIcon
 } from "./styles";
+import User from "../../assets/User.webp";
 
 const UserInfo: React.FC = () => {
     return (
         <Container>
             <Profile>
-                <Avatar/>
-                <UserData/>
+                <Avatar><img src={User} /></Avatar>
+                <UserData>
+                    <strong>Éverton Tof...</strong>
+                    <span>#8479</span>
+                </UserData>
             </Profile>
 
             <Icons>
