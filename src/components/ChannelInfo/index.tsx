@@ -13,7 +13,10 @@ import {
     Input,
     Magnifying,
     InboxNotifications,
-    Help
+    Help,
+    ContainerSearch,
+    ButtonSearch,
+    ContainerIcons
 } from "./styles";
 
 const ChannelInfo: React.FC = () => {
@@ -26,13 +29,32 @@ const ChannelInfo: React.FC = () => {
                 <Description>Canal aberto para conversas</Description>
             </Bloco1>
             <Bloco2>
-                <BellNotification/>
-                <Pin/>
-                <Members/>
-                <Input placeholder="Buscar"/>
-                <Magnifying/>
-                <InboxNotifications/>
-                <Help/>
+                <ContainerIcons>
+                    <BellNotification/>
+                </ContainerIcons>
+
+                <ContainerIcons>
+                    <Pin/>
+                </ContainerIcons>
+
+                <ContainerIcons>
+                    <Members/>
+                </ContainerIcons>
+
+                <ContainerSearch>
+                    <Input placeholder="Buscar"/>
+                    <ButtonSearch>
+                        <Magnifying/>
+                    </ButtonSearch>
+                </ContainerSearch>
+
+                <ContainerIcons>
+                    <InboxNotifications/>
+                </ContainerIcons>
+
+                <ContainerIcons>
+                    <Help/>
+                </ContainerIcons>
             </Bloco2>
         </Container>
     );
