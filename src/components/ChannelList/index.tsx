@@ -1,11 +1,12 @@
 import React from "react";
-import {Container, Category, AddCategoryIcon} from "./styles";
+import {Container, Category, AddCategoryIcon, ArrowDown} from "./styles";
+import ChannelButton from "../ChannelButton";
 
 const ChannelList: React.FC = () => {
     return (
         <Container>
             <Category>
-                <span>Canais de texto</span>
+                <span><ArrowDown/>Canais de texto</span>
                 <AddCategoryIcon/>
             </Category>
 
