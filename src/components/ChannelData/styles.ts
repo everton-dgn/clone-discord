@@ -13,20 +13,19 @@ export const Messages = styled.div`
     padding: 20px 0;
     display: flex;
     flex-direction: column;
-    max-height: cal(100vh - 46px - 68px);
+    max-height: calc(100vh - 46px - 68px);
+    margin-right: 4px;
     overflow-y: scroll;
 
     ::-webkit-scrollbar {
         width: 8px;
+        background-color: var(--secondary);
+        border-radius: 4px;
     }
 
     ::-webkit-scrollbar-thumb {
         background-color: var(--tertiary);
         border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background-color: var(--secondary);
     }
 `;
 

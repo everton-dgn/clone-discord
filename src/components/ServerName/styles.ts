@@ -21,5 +21,6 @@ export const ExpandIcon = styled(ExpandMore)`
     width: 25px;
     height: 25px;
     color: var(--white);
+    opacity: .8;
     cursor: pointer;
 `;

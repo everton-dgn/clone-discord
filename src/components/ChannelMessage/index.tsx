@@ -1,28 +1,42 @@
 import React from "react";
-import {Container} from "./styles";
+import {Container, Avatar, Message, Header, Content, Checked} from "./styles";
+import User from "../../assets/User.webp";
 
-export Interface Props {
-author: string;
-date: string;
-content: string | React.ReactElement | React.ReactNode;
-hasMention?: bolean;
-isBot?: boolean;
+export {Mention} from "./styles";
+
+export interface Props {
+    author: string;
+    date: string;
+    content: string | React.ReactElement | React.ReactNode;
+    hasMention?: boolean;
+    isBot?: boolean;
 }
 
-const ChannelMessage: React.FC = () => {
+const ChannelMessage: React.FC<Props> = ({
+    author,
+    date,
+    content,
+    hasMention,
+    isBot
+}) => {
     return (
-        <Container>
-<Avatar/>
-<Message>
-<Header>
-<stong>Éverton Toffanetto</stong>
-    {isBot && <span>Bot</span>}
-<time>20/06/2020</time>
-</Header>
-<Content>
-Hoje é um grande dia, terminei esse projeto em react js!
-</Content>
-</Message>
+        <Container className={hasMention ? 'mention' : ''}>
+            <Avatar className={isBot ? 'bot' : ''}>
+                {author === "Éverton Toffanetto" &&
+                    <img src={User} alt="Éverton Toffanetto"/>
+                }
+            </Avatar>
+
+            <Message>
+                <Header>
+                    <strong>{author}</strong>
+
+                    {isBot && <span><Checked/> Bot</span>}
+
+                    <time>{date}</time>
+                </Header>
+                <Content>{content}</Content>
+            </Message>
         </Container>
     );
 };
