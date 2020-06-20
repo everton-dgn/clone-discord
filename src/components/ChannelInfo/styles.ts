@@ -14,7 +14,7 @@ export const Container = styled.div`
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    padding: 0 10px 0 17px;
+    padding: 0 6px 0 17px;
 `;
 
 export const Bloco1 = styled.div`
@@ -65,6 +65,10 @@ export const Input = styled.input`
     ::placeholder {
         color: var(--symbol);
         font-weight: 400;
+    }
+
+    :focus {
+        width: 216px;
     }
 `;
 

@@ -1,15 +1,25 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import {Container, Messages, InputWrapper, Input, InputIcon} from "./styles";
 import ChannelMessage, {Mention} from "../ChannelMessage";
 
 const ChannelData: React.FC = () => {
+    const messagesRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+
+    useEffect(() =>{
+        const div = messagesRef.current;
+
+        if(div) {
+            div.scrollTop = div.scrollHeight;
+        }
+    }, [messagesRef]);
+
     return (
         <Container>
-            <Messages>
+            <Messages ref={messagesRef}>
                 <ChannelMessage
                     author="Éverton Toffanetto"
                     date="20/06/2020"
-                    content="Vamos estudar React JS, parece muito interessante,
+                    content=" &#128526; Vamos estudar React JS, parece muito interessante,
                     mas para não esquecer vou repetir:"
                 />
 
@@ -18,9 +28,21 @@ const ChannelData: React.FC = () => {
                         key={n}
                         author="Éverton Toffanetto"
                         date="20/06/2020"
-                        content="Hoje é dia de programar muito usando React JS!"
+                        content="Hoje é dia de programar muito usando React JS! &#128521;"
                     />
                 ))}
+
+                <ChannelMessage
+                    author="MyName de Tal"
+                    date="20/06/2020"
+                    content={
+                        <>
+                            <Mention>@Éveton Toffanetto</Mention> quem sabe faz
+                            ao vivo! &#128540;
+                        </>
+                    }
+                    isBot
+                />
 
                 <ChannelMessage
                     author="Ciclano de Tal"

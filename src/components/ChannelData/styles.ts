@@ -16,9 +16,10 @@ export const Messages = styled.div`
     max-height: calc(100vh - 46px - 68px);
     margin-right: 4px;
     overflow-y: scroll;
+    scrollbar-width: none;
 
     ::-webkit-scrollbar {
-        width: 8px;
+        width: 6px;
         background-color: var(--secondary);
         border-radius: 4px;
     }

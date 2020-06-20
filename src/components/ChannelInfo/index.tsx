@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
     Container,
     HashtagIcon,
@@ -20,6 +20,7 @@ import {
 } from "./styles";
 
 const ChannelInfo: React.FC = () => {
+
     return (
         <Container>
             <Bloco1>
@@ -42,7 +43,7 @@ const ChannelInfo: React.FC = () => {
                 </ContainerIcons>
 
                 <ContainerSearch>
-                    <Input placeholder="Buscar"/>
+                    <Input type="text" placeholder="Buscar"/>
                     <ButtonSearch>
                         <Magnifying/>
                     </ButtonSearch>
