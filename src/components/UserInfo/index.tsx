@@ -15,9 +15,9 @@ const UserInfo: React.FC = () => {
     return (
         <Container>
             <Profile>
-                <Avatar><img src={User} /></Avatar>
+                <Avatar><img src={User} alt="Éverton Toffanetto"/></Avatar>
                 <UserData>
-                    <strong>Éverton Tof...</strong>
+                    <strong>Éverton Toff...</strong>
                     <span>#8479</span>
                 </UserData>
             </Profile>

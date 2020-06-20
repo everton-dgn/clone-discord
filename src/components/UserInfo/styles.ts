@@ -38,7 +38,7 @@ export const UserData = styled.div`
     strong {
         font-size: 13px;
         color: var(--white);
-        display: block;
+        display: flex;
     }
 
     span {
