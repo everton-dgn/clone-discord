@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Hashtag} from "styled-icons/heroicons-outline";
+// import {VolumeUp} from "styled-icons/material-sharp";
 import {PersonAdd, Settings} from "styled-icons/material";
 
 export const Container = styled.div`
@@ -28,7 +29,7 @@ export const Container = styled.div`
         background-color: var(--quinary);
 
         div span {
-            color: var(--white);
+            color: var(--text-light);
         }
 
         div:nth-child(2) svg {
@@ -47,6 +48,13 @@ export const HashtagIcon = styled(Hashtag)`
     height: 20px;
     color: var(--symbol);
 `;
+
+// export const VolumeIcon = styled(VolumeUp)`
+//     margin-left: 5px;
+//     width: 20px;
+//     height: 20px;
+//     color: var(--symbol);
+// `;
 
 export const InviteIcon = styled(PersonAdd)`
     width: 16px;

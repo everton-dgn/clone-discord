@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {
     Container,
     HashtagIcon,
@@ -25,7 +25,7 @@ const ChannelInfo: React.FC = () => {
         <Container>
             <Bloco1>
                 <HashtagIcon/>
-                <Title>geral</Title>
+                <Title>chat-livre</Title>
                 <Separator/>
                 <Description>Canal aberto para conversas</Description>
             </Bloco1>

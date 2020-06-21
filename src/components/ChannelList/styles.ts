@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import{Add} from "styled-icons/material"
+import {Add} from "styled-icons/material"
 import {KeyboardArrowDown} from "styled-icons/material-rounded";
 
 export const Container = styled.div`
@@ -8,6 +8,38 @@ export const Container = styled.div`
     flex-direction: column;
     padding: 20px 9.5px 0 3px;
     background-color: var(--secondary);
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    > div:nth-child(2) {
+        background-color: var(--quinary);
+
+        div span {
+            color: var(--text-light);
+        }
+
+        div:nth-child(2) svg {
+            visibility: visible;
+            color: var(--gray);
+        }
+
+        div:nth-child(2) svg:hover {
+            color: var(--white);
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--tertiary);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--secondary);
+    }
 `;
 
 export const Category = styled.div`

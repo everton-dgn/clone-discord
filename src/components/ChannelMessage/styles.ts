@@ -54,6 +54,10 @@ export const Header = styled.div`
         color: var(--white);
         font-size: 16px;
         font-weight: 400;
+
+        :hover {
+            text-decoration: underline;
+        }
     }
 
     span {

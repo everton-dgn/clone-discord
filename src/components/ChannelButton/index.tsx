@@ -4,6 +4,7 @@ import {
     HashtagIcon,
     InviteIcon,
     SettingsIcon
+    // VolumeIcon
 } from "./styles";
 
 export interface Props {

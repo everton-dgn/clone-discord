@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import {AddCircle} from "styled-icons/material";
+import {Gift} from "styled-icons/fa-solid";
+import {Emotion} from "styled-icons/remix-fill";
+import {FileGif} from "styled-icons/boxicons-solid";
 
 export const Container = styled.div`
     grid-area: CD;
@@ -13,7 +16,7 @@ export const Messages = styled.div`
     padding: 20px 0;
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 46px - 68px);
+    max-height: calc(100vh - 46px - 68px - 1px);
     margin-right: 4px;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -33,13 +36,17 @@ export const Messages = styled.div`
 export const InputWrapper = styled.div`
     width: 100%;
     padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
 `;
 
 export const Input = styled.input`
     width: 100%;
+    display: flex;
     height: 44px;
-    padding: 0 10px 0 57px;
-    border-radius: 7px;
+    padding: 0;
     color: var(--white);
     background-color: var(--chat-input);
     position: relative;
@@ -51,17 +58,68 @@ export const Input = styled.input`
         font-size: 15px;
         font-weight: 400;
     }
+`;
 
-    ~ svg {
-        position: relative;
-        top: -50%;
-        left: 16px;
-        transition: 180ms ease-in-out;
-    }
+export const IconsBox = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 44px;
+    background-color: var(--chat-input);
+    border-radius: 7px 0 0 7px;
+`;
+
+export const IconsBoxes = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    background-color: var(--chat-input);
+    border-radius: 0 7px 7px 0;
+    padding-right: 5px;
 `;
 
 export const InputIcon = styled(AddCircle)`
     width: 24px;
     height: 24px;
     color: var(--gray);
+    transition: 180ms ease-in-out;
+
+    :hover {
+        color: var(--text-light);
+    }
+`;
+
+export const InputGift = styled(Gift)`
+    width: 40px;
+    height: 24px;
+    color: var(--gray);
+    transition: 180ms ease-in-out;
+
+    :hover {
+        color: var(--white);
+    }
+`;
+
+export const InputEmoticon = styled(Emotion)`
+    width: 40px;
+    height: 26px;
+    color: var(--gray);
+    transition: 180ms ease-in-out;
+
+    :hover {
+        color: var(--white);
+    }
+`;
+
+export const InputFileGif = styled(FileGif)`
+    width: 40px;
+    height: 24px;
+    color: var(--gray);
+    transition: 180ms ease-in-out;
+
+    :hover {
+        color: var(--white);
+    }
 `;

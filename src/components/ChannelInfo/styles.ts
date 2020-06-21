@@ -61,6 +61,7 @@ export const Input = styled.input`
     border-radius: 4px 0 0 4px;
     color: var(--white);
     font-weight: 400;
+    transition: width .1s;
 
     ::placeholder {
         color: var(--symbol);
@@ -81,19 +82,37 @@ export const ContainerIcons = styled.div`
     color: var(--gray);
 `;
 
-export const BellNotification = styled(Bell)``;
+export const BellNotification = styled(Bell)`
+    :hover {
+        color: var(--text-light);
+    }
+`;
 
-export const Pin = styled(Pushpin)``;
+export const Pin = styled(Pushpin)`
+    :hover {
+        color: var(--text-light);
+    }
+`;
 
-export const InboxNotifications = styled(Inbox)``;
+export const InboxNotifications = styled(Inbox)`
+    :hover {
+        color: var(--text-light);
+    }
+`;
 
 export const Help = styled(HelpWithCircle)`
     width: 21px;
     height: 21px;
+    :hover {
+        color: var(--text-light);
+    }
 `;
 
 export const Members = styled(Group)`
     color: var(--white);
+    :hover {
+        color: var(--text-light);
+    }
 `;
 
 export const ContainerSearch = styled.div`

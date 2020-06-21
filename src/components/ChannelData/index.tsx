@@ -1,14 +1,25 @@
 import React, {useRef, useEffect} from "react";
-import {Container, Messages, InputWrapper, Input, InputIcon} from "./styles";
+import {
+    Container,
+    Messages,
+    InputWrapper,
+    Input,
+    InputIcon,
+    InputGift,
+    InputEmoticon,
+    InputFileGif,
+    IconsBox,
+    IconsBoxes
+} from "./styles";
 import ChannelMessage, {Mention} from "../ChannelMessage";
 
 const ChannelData: React.FC = () => {
     const messagesRef = useRef() as React.MutableRefObject<HTMLDivElement>;
 
-    useEffect(() =>{
+    useEffect(() => {
         const div = messagesRef.current;
 
-        if(div) {
+        if (div) {
             div.scrollTop = div.scrollHeight;
         }
     }, [messagesRef]);
@@ -71,8 +82,17 @@ const ChannelData: React.FC = () => {
             </Messages>
 
             <InputWrapper>
+                <IconsBox>
+                    <InputIcon/>
+                </IconsBox>
+
                 <Input type="text" placeholder="Conversar em #chat-livre"/>
-                <InputIcon/>
+
+                <IconsBoxes>
+                    <InputGift/>
+                    <InputFileGif/>
+                    <InputEmoticon/>
+                </IconsBoxes>
             </InputWrapper>
         </Container>
     );
