@@ -42,6 +42,7 @@ export const User =styled.div`
     border-radius: 4px;
     background: transparent;
     transition: background .2s;
+    position: relative;
 
     &:hover {
         background: rgba(255, 255, 255, 0.1);
