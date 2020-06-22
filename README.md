@@ -56,7 +56,7 @@ yarn build
 
 ## Imagem do Projeto
 
-![Imagem do projeto](https://github.com/querocriarsite/discord/blob/master/screenshot/screenshot.png)
+![Imagem do projeto](https://github.com/querocriarsite/clone-discord/blob/master/screenshot/screenshot.png)
 
 ## Autoria
 
