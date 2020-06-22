@@ -10,7 +10,7 @@ https://youtu.be/jso5RuIlDN4
 <b>- Link para visualização:</b> <br>
 https://querocriarsite.com/projetos/discord/
 
-## Tecnologias usadas:
+## Tecnologias Usadas:
 
 ⚛ React js
 
