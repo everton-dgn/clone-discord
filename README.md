@@ -1,6 +1,6 @@
 <a href="./LICENSE">![GitHub](https://img.shields.io/github/license/querocriarsite/clone-discord?style=plastic)</a>
 
-# PROJETO CLONE DO DISCORD
+<h1 align="center">PROJETO CLONE DO DISCORD</h1>
 
 ## Apresentação
 
