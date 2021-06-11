@@ -12,7 +12,7 @@ Este projeto tem como objetivo principal estudar React e suas tecnologias no des
 https://youtu.be/jso5RuIlDN4
 
 <b>- Link para visualização:</b> <br>
-https://querocriarsite.com/projetos/discord/
+https://clone-discord.querocriarsite.com/
 
 ## Tecnologias Usadas:
 
